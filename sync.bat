@@ -2,8 +2,8 @@
 title 通过 Git 同步.. 
 ::Start...
 echo Start synchronizing...
-
 echo Commit changes...
+git remote set-url origin https://foxempire:qltv123@github.com/foxempire/blog.git
 
 :: get date and time 
 for /f "delims=" %%a in ('date/t') do @set mydate=%%a 
