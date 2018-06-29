@@ -5,6 +5,7 @@ title 通过 Git 同步..
 echo Start synchronizing...
 echo Commit changes...
 git remote set-url origin https://foxempire:qltv123@github.com/foxempire/blog.git
+git config --global user.email "guge@foxmail.com"
 
 :: get date and time 
 for /f "delims=" %%a in ('date/t') do @set mydate=%%a 
