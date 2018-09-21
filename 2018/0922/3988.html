@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>程序员之怒：web崩溃百万 - 下班 ?! 666</title>
+<meta name="keywords" content="">
+<meta name="description" content="您可能从来没有听说过，但是在2016年3月23日，互联网几乎崩溃了。 当愤怒的程序员决定清除托管在名为npm上的JavaScript 注册列表中所有的代码时，搭建起互联网的大量软件都崩溃了。">
+<link rel="stylesheet" href="http://foxempire.github.io/blog/css_dedemao/style.css" type="text/css" />
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript"></script>
+<script src="http://foxempire.github.io/blog/css_dedemao/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://foxempire.github.io/blog/css_dedemao/js/weiscript.js" type="text/javascript"></script>
+<script src="http://foxempire.github.io/blog/css_dedemao/js/slides.jquery.js"></script>
+<script type="text/javascript" src="http://foxempire.github.io/blog/css_dedemao/js/totop.js"></script>
+<script type="text/javascript">
+$(function (){
+	$(window).manhuatoTop({
+		showHeight : 100,
+		speed : 500
+	});
+});
+</script>
+<script type="text/javascript">
+	$(function(){
+		$('#slides').slides({
+		preload: true,
+		generateNextPrev: true
+		});
+	});
+</script>
+</head>
+<body class="Mubanzhijia_Com">
+
+<div class="Top">
+	<div class="Top_Box">
+    	<div class="Logo FL" style="font-size:36px;font-weight:bold;color:#fff;">下班 ?! 666</div>
+        <div class="Info FR">
+        </div>
+    	<div class="Top_L"></div>
+    </div>
+    <div class="Top_R"></div>
+</div>
+<div class="Nav">
+    	<ul>
+      	<li><a href='/'><span>主页</span></a></li>
+      	<li class='hover'><a href='http://www.xiaban666.com/' ><span>小众愚乐</span></a></li>
+    	</ul>
+    <div class="N_L"></div>
+    <div class="N_R"></div>
+</div>
+
+<div class="Main1">
+	<div class="m_Left1 FL">
+    	<div class="m_Box11">您的位置:<a href='http://wuzhi.localhost/'>主页</a> > <a href='http://www.xiaban666.com/'>小众愚乐</a> > </div>
+    	<div class="m_T1">
+        	<h2>
+            	<span><a href="">小众愚乐</a></span> 
+                <a href="http://www.xiaban666.com/2018/0922/3988.html">程序员之怒：web崩溃百万</a>
+            </h2>
+            <p><span class="c2">2018-09-22</span><span class="c1">作者:织梦猫</span><span class="c12">来源：admin</span><span class="c13"><script src="http://wuzhi.localhost/plus/count.php?view=yes&aid=3988&mid=1" type='text/javascript' language="javascript"></script>次阅读</span></p>
+        </div>
+        <div class="m_Box12">
+		
+<div><p>您可能从来没有听说过，但是在2016年3月23日，互联网几乎崩溃了。</p><p>当愤怒的程序员决定清除托管在名为npm上的JavaScript 注册列表中所有的代码时，搭建起互联网的大量软件都崩溃了。</p><p>这听起来不是什么大不了的事——毕竟，代码总是处于被删除然后重新上传更新的状态——但由奥克兰的开发者AzerKoçulu所创建的这一组11行代码的包，恰好是简单但应用范围极其广泛的工具。 Facebook、Netflix和Airbnb等公司的正常运行都依赖于它。</p><div class="pgc-img"><img src="http://p9.pstatp.com/large/pgc-image/1537540601476be69012c2f" img_width="600" img_height="243" alt="程序员之怒：web崩溃百万" inline="0"><p class="pgc-img-caption"></p></div><p>Github via Quartz</p><p>问题得到了及时的解决，对于我们绝大多数用户来说，由于浏览器缓存，我们不会注意到任何的异常。</p><p>但对于Web开发人员来说，这是一场短暂的噩梦，每秒都有数千个模块崩溃。当时有一位开发人员在github论坛上写道：“全网都崩溃了啊”。</p><p>那么为什么删除这么一小段代码就像多米诺骨牌一样推倒了互联网的其他部分呢？首先，在构建程序时，有许多现成的模块和工具可使过程更快更简单。</p><p>Javascript模块最大型的注册表其实是一家名为npm的开源平台，它有点像开发人员的App商店。他们在上面查找他们想要的功能，然后把找到的相关功能的代码地址添加到本地的引用中。格式诸如npm.****，开发工具内置的功能自动调用其中的代码。</p><p>模块中最受欢迎的是Koçulu的11行的'left-pad'模块——一个简单到令人惊讶但又非常有用的代码片段。事实上，整个开发社区甚至都没有意识到之前几乎所有人都引用了这段代码。</p><p>“如果开发人员调用npm模块，软件编译器只会在时机成熟时下载代码并运行，而不是下载之后保存到本地上。”科技记者Matt Weinberger解释道。</p><p>我们在这里谈论的是知名的硅谷企业。正如Weinberger的报道，Facebook，Netflix和Spotify依赖left-pad包更快地运行代码编译器Babel，以及帮助开发人员构建界面更为友好的React——Facebook 的内部项目，最初用来架设Instagram 。</p><p>npm模块大部分时间都运行得很好——除非当前模块被删除，这就是Koçulu所做的事情。</p><p>为了开源社区的荣耀，在10分钟内，其他人就发布了功能完全相同的替补版本，这解决了一些问题，但并非全部。</p><p>面对如倒下的多米诺骨牌一样的连锁崩溃，npm采取了前所未有的措施，从备份中还原了被删除模块，从而在根本上解决了问题。</p><p>但此举引发了编程人员的强烈反对和关于npm社区用户权益问题的激烈争论。</p><p>回到开头，为什么Koçulu删除了自己的模块？正如他在一篇文章中所解释的那样，这一切都是因为与通信公司Kik之间的纠纷——Koçulu正在编写的模块，也命名为kik。</p><p>该公司希望他更改模块的名称，以便他们可以推出自己的产品，但他拒绝了，导致两方之间发生了激烈的口角——通过电子邮件。</p><p>最终，npm平台卷了进来，却不是与他们的开发人员站在一起——他们同意，为了全社会更广泛的利益，kik归属于Kik公司会更有意义。</p><p>该决定使Koçulu异常恼火，并向平台管理者发送了一封电子邮件说：</p><p>“我很多年前就是平台的用户，也是社区的贡献者，并且万万没想到你们会支持公司的专利律师威胁我这样的开源贡献者……心寒了，我希望删除我贡献的所有代码，包括我的帐户。我不想成为npm的一部分，如果你们做不了，请告诉我该如何做。我想我有权从npm上删除我的东西。”</p><p>几个小时后，npm同意了他的要求，删除了他在npm注册的所有273个模块。但由于所有人都只看到kik，没有人意识到随之而来的是什么。</p><p>Koçulu此后曾向他的模块使用者道歉，但始终坚持他最初的决定。</p><p>本文译自 <strong>sciencealert</strong>，由译者 <strong>majer</strong> 基于创作共用协议(BY-NC)发布。</p></div> 
+
+        </div>
+        <div class="dede_pages dede_pagess">
+			<div class="pagelist">
+			 
+			</div>
+		</div>
+        <div class="m_Box13">
+        <!-- 将此标记放在您希望显示like按钮的位置 -->
+<div class="bdlikebutton"></div>
+
+<!-- 将此代码放在适当的位置，建议在body结束前 -->
+<script id="bdlike_shell"></script>
+<script>
+var bdShare_config = {
+	"type":"large",
+	"color":"green",
+	"uid":"624690",
+	"likeText":"好文章，顶一下！",
+	"likedText":"您已顶过，谢谢！"
+};
+document.getElementById("bdlike_shell").src="http://bdimg.share.baidu.com/static/js/like_shell.js?t=" + Math.ceil(new Date()/3600000);
+</script>
+        </div>
+
+        <div class="m_Grid3">
+			<span></span>
+			<p class="p7">凡本站注明“本站”或“投稿”的所有文章，版权均属于本站或投稿人，未经本站授权不得转载、摘编或利用其它方式使用上述作品。本站已授权使用的作品，应在授权范围内使用，并注明“来源：某某站”并附上链接。违反上述声明者，本站将追究其相关法律责任。</p>
+		</div>
+        <div class="m_Box14">
+        	<span>编辑：</span>
+        	关键词： 
+        </div>
+        <div class="m_Box16">
+        	<h3>相关阅读：</h3>
+            <ul>
+ 
+<li><a href="http://www.xiaban666.com/2018/0922/3988.html">程序员之怒：web崩溃百万</a>2018.09.22</li>
+<li><a href="http://www.xiaban666.com/2018/0922/3987.html">撒哈拉沙漠越来越大了</a>2018.09.22</li>
+<li><a href="http://www.xiaban666.com/2018/0922/3986.html">恶搞漫画：半价出租车合适吗</a>2018.09.22</li>
+<li><a href="http://www.xiaban666.com/2018/0922/3985.html">恶搞漫画：打车碰到半价出租车</a>2018.09.22</li>
+<li><a href="http://www.xiaban666.com/2018/0922/3984.html">恶搞漫画：超人会有选择地去救人</a>2018.09.22</li>
+
+
+            </ul>
+        </div>
+	<div id="comment"></div>
+        
+    </div>
+    <div class="m_Right1 FR">
+        <div class="m_T3"><h3>随机推荐</h3></div>
+        <ul class="m_Box17">
+		
+<li><a title="大黑狗：你刚说啥？哈士奇：你踩" href="http://www.xiaban666.com/2018/0723/1213.html">大黑狗：你刚说啥？哈士奇：你踩</a></li>
+<li><a title="抗日战争史第四部胜利投降连环画" href="http://www.xiaban666.com/2018/0919/3737.html">抗日战争史第四部胜利投降连环画</a></li>
+<li><a title="大花毯遇上小花布，格局装饰完美" href="http://www.xiaban666.com/2018/0615/153.html">大花毯遇上小花布，格局装饰完美</a></li>
+<li><a title="恶搞漫画：一个关于鼻屎的故事" href="http://www.xiaban666.com/2018/0623/482.html">恶搞漫画：一个关于鼻屎的故事</a></li>
+<li><a title="恶搞漫画：喜欢网页弹窗的宽带" href="http://www.xiaban666.com/2018/0818/2137.html">恶搞漫画：喜欢网页弹窗的宽带</a></li>
+<li><a title="杨紫真的灵魂画手本人了！把旭凤" href="http://www.xiaban666.com/2018/0830/2576.html">杨紫真的灵魂画手本人了！把旭凤</a></li>
+<li><a title="哮天犬竟然被猪八戒欺负了，网友" href="http://www.xiaban666.com/2018/0915/3503.html">哮天犬竟然被猪八戒欺负了，网友</a></li>
+<li><a title="三国演义 老版连环画之十四-2：传" href="http://www.xiaban666.com/2018/0912/3287.html">三国演义 老版连环画之十四-2：传</a></li>
+ 
+
+        </ul>
+
+        <div class="m_T3"><h3>最新文章</h3></div>
+        <ul class="m_Box7">
+<li><a title="程序员之怒：web崩溃百万" href="http://www.xiaban666.com/2018/0922/3988.html">程序员之怒：web崩溃百万</a></li>
+<li><a title="撒哈拉沙漠越来越大了" href="http://www.xiaban666.com/2018/0922/3987.html">撒哈拉沙漠越来越大了</a></li>
+<li><a title="恶搞漫画：半价出租车合适吗" href="http://www.xiaban666.com/2018/0922/3986.html">恶搞漫画：半价出租车合适吗</a></li>
+<li><a title="恶搞漫画：打车碰到半价出租车" href="http://www.xiaban666.com/2018/0922/3985.html">恶搞漫画：打车碰到半价出租车</a></li>
+<li><a title="恶搞漫画：超人会有选择地去救人" href="http://www.xiaban666.com/2018/0922/3984.html">恶搞漫画：超人会有选择地去救人</a></li>
+<li><a title="恶搞漫画：在别人大叫声中复习高" href="http://www.xiaban666.com/2018/0922/3983.html">恶搞漫画：在别人大叫声中复习高</a></li>
+<li><a title="恶搞漫画：一只会选美女的青蛙王" href="http://www.xiaban666.com/2018/0922/3982.html">恶搞漫画：一只会选美女的青蛙王</a></li>
+<li><a title="恶搞漫画：青蛙王子挑公主" href="http://www.xiaban666.com/2018/0922/3981.html">恶搞漫画：青蛙王子挑公主</a></li>
+ 
+
+        </ul>
+
+	</div>
+    <div class="clear"></div>
+</div>
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script type="text/javascript">
+<!--
+new Valine({
+    el: '#comment' ,
+    notify:false, 
+    verify:false, 
+    appId: '7bLhGRrktv6P1LwAFtb8JUE5-gzGzoHsz',
+    appKey: 'LECRh4zYFDl5DxrXAOfAI8iA',
+    placeholder: 'xiaban ?! 666',
+    path:window.location.pathname, 
+    avatar:'mm' 
+});
+//-->
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?6b553597e165744a9189ca7442b82606";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<div class="Footer">
+    <p class="p6">CopyRight &#169; 2011-2013  All Rights Reserved.</p>
+</div>
+</body>
+</html>
