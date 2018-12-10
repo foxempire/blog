@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AlphaZero：棋类游戏的“终结者” - 下班 ?! 666</title>
+<meta name="keywords" content="">
+<meta name="description" content="谷歌旗下AI开发部门DeepMind的作品登上了最新一期的《Science》杂志的封面。AlphaZero在围棋和日本将棋领域里超越了人类之后，又从无到有地重新挖掘出了国际象棋的正确下法。研究人员">
+<link rel="stylesheet" href="http://foxempire.github.io/blog/css_dedemao/style.css" type="text/css" />
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript"></script>
+<script src="http://foxempire.github.io/blog/css_dedemao/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://foxempire.github.io/blog/css_dedemao/js/weiscript.js" type="text/javascript"></script>
+<script src="http://foxempire.github.io/blog/css_dedemao/js/slides.jquery.js"></script>
+<script type="text/javascript" src="http://foxempire.github.io/blog/css_dedemao/js/totop.js"></script>
+<script type="text/javascript">
+$(function (){
+	$(window).manhuatoTop({
+		showHeight : 100,
+		speed : 500
+	});
+});
+</script>
+<script type="text/javascript">
+	$(function(){
+		$('#slides').slides({
+		preload: true,
+		generateNextPrev: true
+		});
+	});
+</script>
+</head>
+<body class="Mubanzhijia_Com">
+
+<div class="Top">
+	<div class="Top_Box">
+    	<div class="Logo FL" style="font-size:36px;font-weight:bold;color:#fff;">下班 ?! 666</div>
+        <div class="Info FR">
+        </div>
+    	<div class="Top_L"></div>
+    </div>
+    <div class="Top_R"></div>
+</div>
+<div class="Nav">
+    	<ul>
+      	<li><a href='/'><span>主页</span></a></li>
+      	<li class='hover'><a href='http://www.xiaban666.com/' ><span>小众愚乐</span></a></li>
+    	</ul>
+    <div class="N_L"></div>
+    <div class="N_R"></div>
+</div>
+
+<div class="Main1">
+	<div class="m_Left1 FL">
+    	<div class="m_Box11">您的位置:<a href='http://wuzhi.localhost/'>主页</a> > <a href='http://www.xiaban666.com/'>小众愚乐</a> > </div>
+    	<div class="m_T1">
+        	<h2>
+            	<span><a href="">小众愚乐</a></span> 
+                <a href="http://www.xiaban666.com/2018/1210/6207.html">AlphaZero：棋类游戏的“终结者”</a>
+            </h2>
+            <p><span class="c2">2018-12-10</span><span class="c1">作者:织梦猫</span><span class="c12">来源：admin</span><span class="c13"><script src="http://wuzhi.localhost/plus/count.php?view=yes&aid=6207&mid=1" type='text/javascript' language="javascript"></script>次阅读</span></p>
+        </div>
+        <div class="m_Box12">
+		
+<div><p>谷歌旗下AI开发部门DeepMind的作品登上了最新一期的《Science》杂志的封面。AlphaZero在围棋和日本将棋领域里超越了人类之后，又从无到有地重新挖掘出了国际象棋的正确下法。研究人员公布了通用算法和测试数据。</p><p>2017年末，我们推出了AlphaZero，这是一个独立的系统，从头开始自行学习国际象棋、将棋(日本版的国际象棋)和围棋，最终在每个领域内击败世界冠军程序。我们对初步结果感到非常兴奋，并很高兴看到国际象棋界的回应，他们在AlphaZero的棋谱中看到了一种突破性的、高度动态的和“非传统的”行棋风格，与之前的任何国际象棋游戏引擎不同。今天，我们非常开心能够向公众发布AlphaZero的完整评估。报告发表在Science(开放访问版本)杂志上。该期刊确认了这些初步结果。它描述了AlphaZero如何快速学习每个游戏，成为历史上最强大的玩家，从随机游戏开始自我训练，没有内置任何知识，唯一需要预先输入的就是游戏的基本规则。</p><p>国际象棋世界冠军Garry Kasparov卡斯帕罗夫也在《科学》上撰文表示，“我无法掩饰自己的满足感，它充满了非常有活力的风格，就像我一样！”。他指出，这种从头开始每个游戏的能力，不受人类游戏规范的约束，产生了独特的、非正统的、但具有创造性和动态的游戏风格。AlphaZero的棋风可能更接近本源。“它以一种深刻而有用的方式超越了人类。”</p><p>国际象棋大师Matthew Sadle和女性国际大师Natasha Regan已经分析了AlphaZero数以千计的棋谱。Matthew指出，它的风格不同于任何传统的国际象棋引擎。“这就像在翻阅过去一些伟大棋手的秘籍。”</p><p>传统的国际象棋引擎——包括世界计算机国际象棋冠军Stockfish和IBM突破性的Deep Blue——依赖于数千个由强大的人类玩家手工编制的规则和启发式算法，试图解读游戏中的每一种可能性。 Shogi程序也是针对于特定游戏的，使用与国际象棋程序类似的搜索引擎和算法。</p><p>AlphaZero采用了一种完全不同的方法，用深度神经网络和通用算法取代了这些手工制作的规则，这些算法对基本游戏规则之外的东西一无所知。</p><div class="pgc-img"><img src="http://p3.pstatp.com/large/pgc-image/76d176b0c0a04357aa3bbf39e41c619a" img_width="600" img_height="863" alt="AlphaZero：棋类游戏的“终结者”" inline="0"><p class="pgc-img-caption"></p></div><p>论文中举例的决策树</p><p>国际象棋：AlphaZero训练4小时就超越了世界冠军程序Stockfish；日本将棋：AlphaZero训练2小时就超越了世界冠军程序Elmo；</p><p>围棋：AlphaZero训练30小时就超越了传奇性的AlphaGo。</p><p>为了掌握每一种游戏，未经训练的神经网络通过被称为强化学习的试错过程自我对弈数百万盘。起初，它完全随机落子，但随着时间的推移，系统从每一盘的胜负得失中吸取经验，调整神经网络的参数，选择出更加正确的一步。网络需要的训练量取决于游戏的风格和复杂程度，国际象棋大约需要9个小时，将棋大约需要12个小时，围棋则用了13天。</p><p>AlphaZero能够掌握三种不同的复杂游戏——或许应该说是，任何开放信息的游戏——是走向最终实际应用的重要一步。它表明单个算法可以仅仅从最基本的规则中，发展出一整套超越人类千年积累的知识体系。而且，尽管还处于早期阶段，AlphaZero的创意见解加上我们在AlphaFold等其他项目中看到的令人鼓舞的结果，让我们对完成创建通用学习系统的使命充满信心。我们可以用它来解决最重要和最复杂的科学问题。</p><p>本文译自 <strong>deepmind</strong>，由译者 <strong>majer</strong> 基于创作共用协议(BY-NC)发布。</p></div> 
+
+        </div>
+        <div class="dede_pages dede_pagess">
+			<div class="pagelist">
+			 
+			</div>
+		</div>
+        <div class="m_Box13">
+        <!-- 将此标记放在您希望显示like按钮的位置 -->
+<div class="bdlikebutton"></div>
+
+<!-- 将此代码放在适当的位置，建议在body结束前 -->
+<script id="bdlike_shell"></script>
+<script>
+var bdShare_config = {
+	"type":"large",
+	"color":"green",
+	"uid":"624690",
+	"likeText":"好文章，顶一下！",
+	"likedText":"您已顶过，谢谢！"
+};
+document.getElementById("bdlike_shell").src="http://bdimg.share.baidu.com/static/js/like_shell.js?t=" + Math.ceil(new Date()/3600000);
+</script>
+        </div>
+
+        <div class="m_Grid3">
+			<span></span>
+			<p class="p7">凡本站注明“本站”或“投稿”的所有文章，版权均属于本站或投稿人，未经本站授权不得转载、摘编或利用其它方式使用上述作品。本站已授权使用的作品，应在授权范围内使用，并注明“来源：某某站”并附上链接。违反上述声明者，本站将追究其相关法律责任。</p>
+		</div>
+        <div class="m_Box14">
+        	<span>编辑：</span>
+        	关键词： 
+        </div>
+        <div class="m_Box16">
+        	<h3>相关阅读：</h3>
+            <ul>
+ 
+<li><a href="http://www.xiaban666.com/2018/1210/6207.html">AlphaZero：棋类游戏的“终结者”</a>2018.12.10</li>
+<li><a href="http://www.xiaban666.com/2018/1210/6206.html">吞下一枚纽扣电池的后果</a>2018.12.10</li>
+<li><a href="http://www.xiaban666.com/2018/1210/6205.html">和别人比较后，你会感觉很丧吗？</a>2018.12.10</li>
+<li><a href="http://www.xiaban666.com/2018/1209/6204.html">民间故事：吹气退缢鬼</a>2018.12.09</li>
+<li><a href="http://www.xiaban666.com/2018/1207/6203.html">金毛：主人，我闻到猪肉的味道了，真香！猪猪</a>2018.12.07</li>
+
+
+            </ul>
+        </div>
+	<div id="comment"></div>
+        
+    </div>
+    <div class="m_Right1 FR">
+        <div class="m_T3"><h3>随机推荐</h3></div>
+        <ul class="m_Box17">
+		
+<li><a title="世界上最危险的九种植物" href="http://www.xiaban666.com/2018/0622/397.html">世界上最危险的九种植物</a></li>
+<li><a title="日本吐槽：我一看到老板，就知道" href="http://www.xiaban666.com/2018/0916/3555.html">日本吐槽：我一看到老板，就知道</a></li>
+<li><a title="老版封神演义故事连环画： 征战" href="http://www.xiaban666.com/2018/0903/2704.html">老版封神演义故事连环画： 征战</a></li>
+<li><a title="哮天犬竟然被猪八戒欺负了，网友" href="http://www.xiaban666.com/2018/0915/3503.html">哮天犬竟然被猪八戒欺负了，网友</a></li>
+<li><a title="老奶奶宠爱比熊给狗剥虾吃，狗子" href="http://www.xiaban666.com/2018/1012/5075.html">老奶奶宠爱比熊给狗剥虾吃，狗子</a></li>
+<li><a title="恶搞漫画：不一般的自动贩卖机" href="http://www.xiaban666.com/2018/0930/4587.html">恶搞漫画：不一般的自动贩卖机</a></li>
+<li><a title="老照片：1937年的四川" href="http://www.xiaban666.com/2018/1127/6039.html">老照片：1937年的四川</a></li>
+<li><a title="男生与女朋友吵架被赶，只有狗理" href="http://www.xiaban666.com/2018/0615/149.html">男生与女朋友吵架被赶，只有狗理</a></li>
+ 
+
+        </ul>
+
+        <div class="m_T3"><h3>最新文章</h3></div>
+        <ul class="m_Box7">
+<li><a title="AlphaZero：棋类游戏的“终结者”" href="http://www.xiaban666.com/2018/1210/6207.html">AlphaZero：棋类游戏的“终结者”</a></li>
+<li><a title="吞下一枚纽扣电池的后果" href="http://www.xiaban666.com/2018/1210/6206.html">吞下一枚纽扣电池的后果</a></li>
+<li><a title="和别人比较后，你会感觉很丧吗？" href="http://www.xiaban666.com/2018/1210/6205.html">和别人比较后，你会感觉很丧吗？</a></li>
+<li><a title="民间故事：吹气退缢鬼" href="http://www.xiaban666.com/2018/1209/6204.html">民间故事：吹气退缢鬼</a></li>
+<li><a title="金毛：主人，我闻到猪肉的味道了" href="http://www.xiaban666.com/2018/1207/6203.html">金毛：主人，我闻到猪肉的味道了</a></li>
+<li><a title="哈士奇做马桶上厕所，主人在一边" href="http://www.xiaban666.com/2018/1207/6202.html">哈士奇做马桶上厕所，主人在一边</a></li>
+<li><a title="狗子出门遛了一趟回来，铲屎官内" href="http://www.xiaban666.com/2018/1207/6201.html">狗子出门遛了一趟回来，铲屎官内</a></li>
+<li><a title="搞笑漫画：让人喜欢的坏男孩" href="http://www.xiaban666.com/2018/1207/6200.html">搞笑漫画：让人喜欢的坏男孩</a></li>
+ 
+
+        </ul>
+
+	</div>
+    <div class="clear"></div>
+</div>
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script type="text/javascript">
+<!--
+new Valine({
+    el: '#comment' ,
+    notify:false, 
+    verify:false, 
+    appId: '7bLhGRrktv6P1LwAFtb8JUE5-gzGzoHsz',
+    appKey: 'LECRh4zYFDl5DxrXAOfAI8iA',
+    placeholder: 'xiaban ?! 666',
+    path:window.location.pathname, 
+    avatar:'mm' 
+});
+//-->
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?6b553597e165744a9189ca7442b82606";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<div class="Footer">
+    <p class="p6">CopyRight &#169; 2011-2013  All Rights Reserved.</p>
+</div>
+</body>
+</html>
