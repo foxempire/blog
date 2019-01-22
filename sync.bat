@@ -1,6 +1,11 @@
 @echo off
 cd /d "%~dp0"
 title 通过 Git 同步.. 
+
+cd .git
+del /Q *.lock
+cd ..
+
 ::Start...
 echo Start synchronizing...
 echo Commit changes...
